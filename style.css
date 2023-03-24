@@ -163,12 +163,14 @@ body{
         width: auto;
     }
     .detalhes__foto{
+        /* position: absolute; */
         width: 427.17px;
         height: 505px;
         left: 140.83px;
         top: 303.44px;
     }
     .detalhes__retangulo{
+        /* position: absolute; */
         box-sizing: border-box;
         width: 425.62px;
         /* height: 480.42px;
