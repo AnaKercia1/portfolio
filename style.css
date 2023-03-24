@@ -156,7 +156,7 @@ body{
         justify-content: center;
     }
     .apresentacao {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 5px;
     }
     .apresentacao__conteudo{
