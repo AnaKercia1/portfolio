@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #ee1505;
+    --cor-hover: #272727;
+    --fonte-principal: 'Playfair Display', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-image: url(./assets/fundo.jpg);
+    background-color: var(--cor-primaria);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 0.8% 0% 0% 6%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 60px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+.apresentacao{
+    padding: 13% 4% 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 1.87rem;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 500;
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.titulo-destaque2{
+    color: var(--cor-terciaria);
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    text-decoration: solid;
+}
+.apresentacao__conteudo__texto{
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+}
+.listas__itens{
+    list-style: circle;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-style: italic;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__link{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+}
+.detalhes__links{
+    width: 40px;
+    height: 40px;
+}
+.detalhes__links__link{
+    width: 32px;
+    height: 32px;
+}
+.detalhes__retangulo{
+    width: 460px;
+    height: 512px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 16px;
+}
+.detalhes__foto{
+    width: 461.71px;
+    height: 518px;
+    left: 780px;
+    top: 250px;
+    border-radius: 16px;
+    margin-left: 1rem;
+}
+.detalhes__foto:hover{
+    box-shadow: 0 0 6px 6px var(--cor-terciaria);
+}
+.rodape{
+    padding: 10px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .detalhes__foto{
+        position: absolute;
+        width: 427.17px;
+        height: 485.9px;
+        left: 140.83px;
+        top: 303.44px;
+    }
+    .detalhes__retangulo{
+        box-sizing: border-box;
+        position: absolute;
+        width: 425.62px;
+        height: 480.42px;
+        left: 159.09px;
+        top: 287px;
+        border: 3px solid #ee1505;
+        border-radius: 16px;
+    }
+}
