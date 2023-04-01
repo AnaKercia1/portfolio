@@ -158,6 +158,7 @@ body{
     .apresentacao {
         flex-direction: column-reverse;
         padding: 8%;
+        align-items: start;
     }
     .apresentacao__conteudo{
         width: auto;
@@ -169,10 +170,11 @@ body{
         
     }
     .detalhes__retangulo{
-        margin-top: 15%;
+        margin-top: 50%;
         width: 300.62px;
         height: 280.42px; 
         border: 3px solid #ee1505;
         border-radius: 16px;
     }
+
 }
